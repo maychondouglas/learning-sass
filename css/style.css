@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/*Seletores*/
+header {
+  font-size: 20px;
+  font-weight: 600; }
+  header h1 {
+    color: red; }
+    header h1 span {
+      font-weight: 900; }
+
+/*Variáveis*/
+header {
+  font-size: 1.5rem;
+  font-weight: 600; }
+  header h1 {
+    color: red; }
+    header h1 span {
+      font-weight: 900; }
+
+/*Interpolação*/
+header {
+  font-size: 1.5rem;
+  font-weight: 600; }
+  header h1 {
+    color: red; }
+    header h1 span {
+      font-weight: 900; }
+
+/*Extend*/
+.mensage, .mensage-alert {
+  border-radius: 3px;
+  border: 1px solid #333; }
+
+.mensage-alert {
+  color: #999; }
+
+/*Operações*/
+header {
+  font-size: 1.5rem;
+  font-weight: 600; }
+  header h1 {
+    color: red; }
+    header h1 span {
+      font-weight: 900; }
+
+/*Mixins*/
+.box {
+  background-color: #777;
+  --webkit-border-radius: $radius;
+  --moz-border-radius: $radius;
+  -ms-border-radius: 3px;
+  border-radius: 3px; }
+
+/*Funções*/

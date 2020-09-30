@@ -1,0 +1,88 @@
+/*Seletores*/
+header {
+    font: {
+        size: 20px;
+        weight: 600;
+    }
+    h1 {
+        color: red;
+        span {
+            font-weight: 900;
+        }
+    }
+}
+
+/*Variáveis*/
+$font_size_top: 1.5rem;
+$font_weight_top: 600;
+
+header {
+    font: {
+        size: $font_size_top;
+        weight: $font_weight_top;
+    }
+    h1 {
+        color: red;
+        span {
+            font-weight: 900;
+        }
+    }
+}
+/*Interpolação*/
+$font_size_top: 1.5rem;
+$font_weight_top: 600;
+$font_word: font;
+
+header {
+    #{$font_word}: {
+        size: $font_size_top;
+        weight: $font_weight_top;
+    }
+    h1 {
+        color: red;
+        span {
+            #{$font_word}-weight: 900;
+        }
+    }
+}
+/*Extend*/
+.mensage {
+    border-radius: 3px;
+    border: 1px solid #333;
+  }
+  .mensage-alert {
+    @extend .mensage;
+    color: #999;
+  }
+/*Operações*/
+$font_size_top: 1.5rem;
+$font_weight_top: 600;
+
+header {
+    font: {
+        size: $font_size_top;
+        weight: $font_weight_top;
+    }
+    h1 {
+        color: red;
+        span {
+            font-weight: $font_weight_top + 300;
+        }
+    }
+}
+
+/*Mixins*/
+
+@mixin border-radius($radius) {
+    --webkit-border-radius: $radius;
+    --moz-border-radius: $radius;
+    -ms-border-radius : $radius;
+    border-radius: $radius;
+}
+
+.box { 
+    background-color: #777;
+    @include border-radius(3px);
+}
+/*Funções*/
+
